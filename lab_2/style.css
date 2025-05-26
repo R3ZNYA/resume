@@ -1,0 +1,208 @@
+body {
+    font-family: 'Century Gothic', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+.resume {
+    max-width: 800px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    grid-column: span 2;
+    border-bottom: 3px solid #4B4EAC;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.name {
+    font-size: 32px;
+    color: #4B4EAC;
+    margin: 0;
+}
+
+.title {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.left-column {
+    padding-right: 20px;
+    border-right: 3px solid #4B4EAC;
+    text-align: right;
+}
+
+.left-column h3 {
+    font-family: 'bookman old', serif;
+    color: #4B4EAC;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    display: inline-block;
+    text-align: right;
+}
+
+.left-column p,
+.left-column li {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.left-column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.right-column {
+    padding-left: 20px;
+}
+
+.right-column h3 {
+    font-family: 'bookman old', serif;
+    color: #4B4EAC;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.right-column p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.job-title {
+    font-weight: bold;
+    color: #4B4EAC;
+}
+
+.date-range {
+    font-size: 12px;
+    color: #555;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.references {
+    font-style: italic;
+    color: #555;
+    margin-top: 20px;
+}
+/* Тема (світла / темна) */
+body.dark {
+    background-color: #121212;
+    color: #fff;
+}
+body, footer, div.comment, #modal {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.dark footer, body.dark div.comment{
+    background-color: #222;
+    color: #eee;
+}
+body.dark #modal {
+    background: rgba(0,0,0,0.5);
+}
+body.dark #modalContent {
+    background: #222;
+}
+
+/* Кнопка перемикання теми */
+#themeToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background-color: #4B4EAC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Коментарі */
+#comments {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 10px;
+    border-top: 2px solid #4B4EAC;
+}
+#comments h3 {
+    color: #4B4EAC;
+    font-family: 'bookman old', serif;
+}
+.comment {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-left: 4px solid #4B4EAC;
+}
+
+/* Модальне вікно */
+#modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    h3 {
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        padding: 8px 12px;
+        background-color: #4B4EAC;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+}
+#modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    background-color: #f0f0f0;
+}
+
+
